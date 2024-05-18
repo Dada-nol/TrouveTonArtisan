@@ -1,13 +1,11 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Graphik";
+  src: url(../public/Font/Graphik-Bold-Trial.otf);
+  src: url(../public/Font/Graphik-Semibold-Trial.otf);
+  src: url(../public/Font/Graphik-Light-Trial.otf);
+  src: url(../public/Font/Graphik-Regular-Trial.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: "Graphik", serif;
 }
