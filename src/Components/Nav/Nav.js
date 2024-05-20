@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 export default function NavBar() {
@@ -5,9 +6,9 @@ export default function NavBar() {
     <nav className="navbar navbar-expand-lg shadow-sm p-3 ">
       <div className="container d-flex ">
         <div>
-          <a className="navbar-brand" href="Accueil">
+          <Link to="/" className="navbar-brand">
             <img className="logo" src="Img/Logo.png" alt=""></img>
-          </a>
+          </Link>
         </div>
 
         <div className="row">
@@ -21,7 +22,6 @@ export default function NavBar() {
               aria-expanded="false"
             >
               <svg
-                className="icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -43,7 +43,7 @@ export default function NavBar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="icon navbar-toggler-icon"></span>
+              <span className=" navbar-toggler-icon"></span>
             </button>
           </div>
         </div>
@@ -66,37 +66,37 @@ function Nav(props) {
   return (
     <ul className="navbar-nav ms-auto">
       <li className="nav-item mx-0 mx-lg-1">
-        <a
+        <Link
           className={`nav-link ${props.Bâtiment} py-3 px-0 px-lg-3`}
           aria-current="page"
-          href="Bâtiment"
+          to="/Bâtiment"
         >
           Bâtiment
-        </a>
+        </Link>
       </li>
       <li className="nav-item mx-0 mx-lg-1">
-        <a
+        <Link
           className={`nav-link ${props.Service} py-3 px-0 px-lg-3`}
-          href="Services"
+          to="/Services"
         >
-          Service
-        </a>
+          Services
+        </Link>
       </li>
       <li className="nav-item mx-0 mx-lg-1">
-        <a
+        <Link
           className={`nav-link ${props.Fabrication} py-3 px-0 px-lg-3`}
-          href="Fabrication"
+          to="/Fabrication"
         >
           Fabrication
-        </a>
+        </Link>
       </li>
       <li className="nav-item mx-0 mx-lg-1">
-        <a
+        <Link
           className={`nav-link ${props.Alimentation} py-3 px-0 px-lg-3`}
-          href="Alimentation"
+          to="/Alimentation"
         >
           Alimentation
-        </a>
+        </Link>
       </li>
     </ul>
   );
