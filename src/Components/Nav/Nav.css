@@ -1,0 +1,59 @@
+.logo {
+  width: 200px;
+}
+
+button {
+  width: 55px;
+  height: 40px;
+}
+
+.nav-link {
+  color: #0074c7;
+}
+
+form {
+  border-bottom: solid 1px #0074c7;
+  border-right: solid 1px #0074c7;
+  padding-right: 3px;
+}
+
+input {
+  color: #384050;
+  outline: none;
+}
+
+.form-control {
+  border: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #00497c;
+}
+
+form:active {
+  border: solid 2px #82b864;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 1px 1px 1px 1px #0074c7;
+}
+
+@media screen and (min-width: 991px) {
+  #searchbar {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+  svg {
+    color: #0074c7;
+  }
+
+  svg:hover {
+    color: #00497c;
+  }
+}
