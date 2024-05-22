@@ -4,7 +4,7 @@ import NavBar from "../Nav/Nav";
 function Fabrication() {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar Fabrication="active"></NavBar>
       <div>Fabric</div>
     </>
   );

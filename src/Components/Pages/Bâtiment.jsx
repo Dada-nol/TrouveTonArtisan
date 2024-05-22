@@ -4,7 +4,7 @@ import NavBar from "../Nav/Nav";
 function Bâtiment() {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar Bâtiment="active"></NavBar>
       <div>Bâtiment</div>
     </>
   );

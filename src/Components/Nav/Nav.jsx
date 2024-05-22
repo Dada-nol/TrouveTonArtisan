@@ -3,7 +3,7 @@ import "./Nav.css";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg shadow-sm p-3 ">
+    <nav className="navbar navbar-expand-lg shadow-sm p-0">
       <div className="container d-flex ">
         <div>
           <Link to="/" className="navbar-brand">
@@ -50,11 +50,14 @@ export default function NavBar() {
 
         <div
           id="searchbar"
-          className="collapse navbar-collapse align-self-start"
+          className="collapse navbar-collapse align-self-start mt-3"
         >
           <SearchBar></SearchBar>
         </div>
-        <div className="collapse navbar-collapse " id="navbarNav">
+        <div
+          className="collapse navbar-collapse align-self-center mt-5"
+          id="navbarNav"
+        >
           <Nav></Nav>
         </div>
       </div>
@@ -105,12 +108,29 @@ function Nav(props) {
 function SearchBar() {
   return (
     <form role="search">
-      <input
-        className="form-control"
-        type="search"
-        placeholder="Rechercher"
-        aria-label="Search"
-      ></input>
+      <div className=" form-control pt-1 d-flex align-items-center justify-content-between">
+        <div>
+          <input
+            className="border-0"
+            type="search"
+            placeholder="Rechercher"
+            aria-label="Search"
+          ></input>
+        </div>
+        <di>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg>
+        </di>
+      </div>
+
       {/* <button className="btn btn-outline-success" type="submit">
         Recherche...
       </button> */}

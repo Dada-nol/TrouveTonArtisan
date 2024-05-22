@@ -4,7 +4,7 @@ import NavBar from "../Nav/Nav";
 function Alimentation() {
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar Alimentation="active"></NavBar>
       <div>Alim</div>
     </>
   );
