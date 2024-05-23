@@ -7,7 +7,7 @@ function Footer() {
       <div className="container text-center text-light p-3">
         <div className="row">
           <div className="col-lg col-md-6">
-            <h3 className="mb-3">Lyon</h3>
+            <h5 className="mb-3">Lyon</h5>
             <p>101 cours Charlemagne</p>
             <p>CS 20033</p>
             <p>69269 LYON CEDEX 02</p>
@@ -16,7 +16,7 @@ function Footer() {
           </div>
 
           <div className="col-lg col-md-6">
-            <h3 className="mb-3">Mention légales</h3>
+            <h5 className="mb-3">Mention légales</h5>
             <p>Données personelles</p>
 
             <p>Accessibilité : Partiellement conforme</p>
