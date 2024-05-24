@@ -1,59 +1,50 @@
-.logo {
+nav .logo {
   width: 200px;
 }
-
-button {
+nav button {
   width: 55px;
   height: 40px;
 }
-
-.nav-link {
+nav .nav-link {
   color: #0074c7;
 }
-
-form {
+nav .nav-link:hover {
+  text-decoration: underline;
+  color: #00497c;
+}
+nav form {
   border-bottom: solid 1px #0074c7;
   border-right: solid 1px #0074c7;
   padding-right: 3px;
 }
-
-input {
+nav form:active {
+  border: solid 2px #82b864;
+}
+nav input {
   color: #384050;
   outline: none;
 }
-
-.form-control {
+nav .form-control {
   border: none;
 }
-
-.nav-link:hover {
-  text-decoration: underline;
-  color: #00497c;
-}
-
-form:active {
-  border: solid 2px #82b864;
-}
-
-.navbar-toggler:focus {
+nav .navbar-toggler:focus {
   box-shadow: 1px 1px 1px 1px #0074c7;
 }
-
 @media screen and (min-width: 991px) {
-  #searchbar {
+  nav #searchbar {
     position: absolute;
     top: 10px;
     right: 150px;
   }
-
-  .logo {
+  nav .logo {
     width: 300px;
   }
-  svg {
+  nav svg {
     color: #0074c7;
   }
-
-  svg:hover {
+  nav svg:hover {
     color: #00497c;
   }
 }
+
+/*# sourceMappingURL=Nav.css.map */
