@@ -1,16 +1,12 @@
-import Footer from "../Footer.jsx";
-import NavBar from "../Nav/Nav";
+/* import NavBar from "../Nav"; */
 
 const Home = () => {
   return (
     <>
-      <header>
+      {/* <header>
         <NavBar></NavBar>
-      </header>
+      </header> */}
       <main></main>
-      <footer>
-        <Footer></Footer>
-      </footer>
     </>
   );
 };

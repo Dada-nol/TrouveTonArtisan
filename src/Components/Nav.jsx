@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
-export default function NavBar() {
+export default function NavBar(props) {
   return (
     <nav className="navbar navbar-expand-lg shadow-sm p-0">
       <div className="container d-flex ">
@@ -58,50 +58,44 @@ export default function NavBar() {
           className="collapse navbar-collapse align-self-center mt-5"
           id="navbarNav"
         >
-          <Nav></Nav>
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item mx-0 mx-lg-1">
+              <Link
+                className={`nav-link ${props.batiment} py-3 px-0 px-lg-3`}
+                aria-current="page"
+                to="/Bâtiment"
+              >
+                Bâtiment
+              </Link>
+            </li>
+            <li className="nav-item mx-0 mx-lg-1">
+              <Link
+                className={`nav-link ${props.services} py-3 px-0 px-lg-3`}
+                to="/Services"
+              >
+                Services
+              </Link>
+            </li>
+            <li className="nav-item mx-0 mx-lg-1">
+              <Link
+                className={`nav-link ${props.fabrication} py-3 px-0 px-lg-3`}
+                to="/Fabrication"
+              >
+                Fabrication
+              </Link>
+            </li>
+            <li className="nav-item mx-0 mx-lg-1">
+              <Link
+                className={`nav-link ${props.alimentation} py-3 px-0 px-lg-3`}
+                to="/Alimentation"
+              >
+                Alimentation
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-  );
-}
-
-function Nav(props) {
-  return (
-    <ul className="navbar-nav ms-auto">
-      <li className="nav-item mx-0 mx-lg-1">
-        <Link
-          className={`nav-link ${props.Bâtiment} py-3 px-0 px-lg-3`}
-          aria-current="page"
-          to="/Bâtiment"
-        >
-          Bâtiment
-        </Link>
-      </li>
-      <li className="nav-item mx-0 mx-lg-1">
-        <Link
-          className={`nav-link ${props.Service} py-3 px-0 px-lg-3`}
-          to="/Services"
-        >
-          Services
-        </Link>
-      </li>
-      <li className="nav-item mx-0 mx-lg-1">
-        <Link
-          className={`nav-link ${props.Fabrication} py-3 px-0 px-lg-3`}
-          to="/Fabrication"
-        >
-          Fabrication
-        </Link>
-      </li>
-      <li className="nav-item mx-0 mx-lg-1">
-        <Link
-          className={`nav-link ${props.Alimentation} py-3 px-0 px-lg-3`}
-          to="/Alimentation"
-        >
-          Alimentation
-        </Link>
-      </li>
-    </ul>
   );
 }
 

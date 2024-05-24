@@ -1,10 +1,15 @@
 import React from "react";
-import NavBar from "../Nav/Nav";
+/* import NavBar from "../Nav"; */
 
 function Bâtiment() {
   return (
     <>
-      <NavBar Bâtiment="active"></NavBar>
+      {/* <NavBar
+        batiment="active"
+        alimentation=""
+        fabrication=""
+        services=""
+      ></NavBar> */}
       <div>Bâtiment</div>
     </>
   );
