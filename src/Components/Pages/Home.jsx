@@ -1,4 +1,4 @@
-/* import NavBar from "../Nav"; */
+import CardList from "../CardList";
 
 const Home = () => {
   return (
@@ -6,7 +6,9 @@ const Home = () => {
       {/* <header>
         <NavBar></NavBar>
       </header> */}
-      <main></main>
+      <main>
+        <CardList></CardList>
+      </main>
     </>
   );
 };
