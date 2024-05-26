@@ -1,11 +1,21 @@
 import React from "react";
-import data from "../Data/datas.json";
+import datas from "../Data/datas.json";
 import Card from "./Card";
 
 function CardList() {
   return (
-    <div>
-      <Card data={data}></Card>
+    <div className="card-list container ">
+      <div className="row ">
+        {datas.map((datas) => (
+          <Card
+            key={datas.id}
+            name={datas.name}
+            note={datas.note}
+            location={datas.location}
+            specialty={datas.specialty}
+          ></Card>
+        ))}
+      </div>
     </div>
   );
 }
