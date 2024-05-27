@@ -6,4 +6,32 @@
   color: #0074c7;
 }
 
+.step li,
+.step p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #384050;
+}
+.step h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00497c;
+  font-weight: bolder;
+}
+.step h3 {
+  color: #0074c7;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00497c;
+}
+
 /*# sourceMappingURL=style.css.map */

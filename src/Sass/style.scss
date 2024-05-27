@@ -5,10 +5,37 @@ $Gris: #384050;
 $Rouge: #cd2c2e;
 $Vert: #82b864;
 
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   padding: 0;
   width: 300px;
   p {
     color: $Bleu-clair;
   }
+}
+
+.step {
+  li,
+  p {
+    @include flex;
+    color: $Gris;
+  }
+  h1 {
+    @include flex;
+    color: $Bleu-fonce;
+  }
+  h3 {
+    color: $Bleu-clair;
+  }
+}
+
+h2 {
+  @include flex;
+  color: $Bleu-fonce;
 }
