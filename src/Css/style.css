@@ -1,5 +1,9 @@
 .card {
   padding: 0;
+  width: 300px;
+}
+.card p {
+  color: #0074c7;
 }
 
 /*# sourceMappingURL=style.css.map */

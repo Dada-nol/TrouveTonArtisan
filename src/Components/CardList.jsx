@@ -5,7 +5,7 @@ import Card from "./Card";
 function CardList() {
   return (
     <div className="card-list container ">
-      <div className="row ">
+      <div className="row d-flex justify-content-center">
         {datas.map((datas) => (
           <Card
             key={datas.id}
