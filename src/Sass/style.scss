@@ -4,3 +4,11 @@ $Bleu-fonce: #00497c;
 $Gris: #384050;
 $Rouge: #cd2c2e;
 $Vert: #82b864;
+
+.card {
+  padding: 0;
+  width: 300px;
+  p {
+    color: $Bleu-clair;
+  }
+}

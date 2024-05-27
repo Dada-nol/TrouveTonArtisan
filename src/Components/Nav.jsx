@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../Css/Nav.css";
 
-export default function NavBar(props) {
+export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg shadow-sm p-0">
       <div className="container d-flex ">
@@ -61,7 +61,7 @@ export default function NavBar(props) {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item mx-0 mx-lg-1">
               <Link
-                className={`nav-link ${props.batiment} py-3 px-0 px-lg-3`}
+                className={`nav-link  py-3 px-0 px-lg-3`}
                 aria-current="page"
                 to="/Bâtiment"
               >
@@ -69,24 +69,18 @@ export default function NavBar(props) {
               </Link>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
-              <Link
-                className={`nav-link ${props.services} py-3 px-0 px-lg-3`}
-                to="/Services"
-              >
+              <Link className={`nav-link py-3 px-0 px-lg-3`} to="/Services">
                 Services
               </Link>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
-              <Link
-                className={`nav-link ${props.fabrication} py-3 px-0 px-lg-3`}
-                to="/Fabrication"
-              >
+              <Link className={`nav-link  py-3 px-0 px-lg-3`} to="/Fabrication">
                 Fabrication
               </Link>
             </li>
             <li className="nav-item mx-0 mx-lg-1">
               <Link
-                className={`nav-link ${props.alimentation} py-3 px-0 px-lg-3`}
+                className={`nav-link  py-3 px-0 px-lg-3`}
                 to="/Alimentation"
               >
                 Alimentation

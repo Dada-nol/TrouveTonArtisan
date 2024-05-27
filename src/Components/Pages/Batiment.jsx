@@ -1,4 +1,5 @@
 import React from "react";
+import CardList from "../CardList";
 /* import NavBar from "../Nav"; */
 
 function Bâtiment() {
@@ -10,7 +11,9 @@ function Bâtiment() {
         fabrication=""
         services=""
       ></NavBar> */}
-      <div>Bâtiment</div>
+      <div>
+        <CardList></CardList>
+      </div>
     </>
   );
 }
