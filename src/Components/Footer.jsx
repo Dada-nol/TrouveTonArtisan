@@ -3,7 +3,7 @@ import "../Css/Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="container text-center text-light p-3">
         <div className="row">
           <div className="col-lg col-md-6">
@@ -28,7 +28,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
