@@ -1,13 +1,13 @@
 import React from "react";
 import Router from "./Components/Router";
-import ArtisanContext from "./Context/Context";
+import ArtisanContextProvider from "./Context/ArtisanContext";
 
 function App() {
   return (
     <div className="App">
-      <ArtisanContext>
+      <ArtisanContextProvider>
         <Router></Router>
-      </ArtisanContext>
+      </ArtisanContextProvider>
     </div>
   );
 }
