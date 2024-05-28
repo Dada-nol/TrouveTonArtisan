@@ -32,7 +32,9 @@ function Router() {
             <Route path="/Services" element={<Services />}></Route>
             <Route path="/Alimentation" element={<Alimentation />}></Route>
             <Route path="/Fabrication" element={<Fabrication />}></Route>
-            <Route path="Artisan/:id" element={<Artisan></Artisan>}></Route>
+            <Route path="/Artisan/" element={<Artisan></Artisan>}>
+              <Route path=":id" element={<Artisan></Artisan>}></Route>
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

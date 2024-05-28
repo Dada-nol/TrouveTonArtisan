@@ -6,15 +6,17 @@ function CardList() {
   return (
     <div className="card-list container ">
       <div className="row d-flex justify-content-center">
-        {datas.map((datas) => (
-          <Card
-            key={datas.id}
-            name={datas.name}
-            note={datas.note}
-            location={datas.location}
-            specialty={datas.specialty}
-          ></Card>
-        ))}
+        {datas.map((datas) => {
+          return (
+            <Card
+              key={datas.id}
+              name={datas.name}
+              note={datas.note}
+              location={datas.location}
+              specialty={datas.specialty}
+            ></Card>
+          );
+        })}
       </div>
     </div>
   );

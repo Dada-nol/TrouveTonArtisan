@@ -5,15 +5,7 @@ import CardList from "../Components/CardList";
 function Bâtiment() {
   return (
     <>
-      {/* <NavBar
-        batiment="active"
-        alimentation=""
-        fabrication=""
-        services=""
-      ></NavBar> */}
-      <div>
-        <CardList></CardList>
-      </div>
+      <CardList></CardList>
     </>
   );
 }

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Artisan() {
-  return (
-    <div>Artisan</div>
-  )
+  return <p></p>;
 }
 
-export default Artisan
+export default Artisan;

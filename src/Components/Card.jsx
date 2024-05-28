@@ -3,7 +3,11 @@ import "../Css/style.css";
 
 function Card(props) {
   return (
-    <div key={props.id} className="card col-md-6 col-lg-4 m-3">
+    <a
+      key={props.id}
+      className="card col-md-6 col-lg-4 m-3"
+      href={`/Artisan/${props.id}`}
+    >
       <div>
         <img className="card-img-top img-fluide" src="Img/6495568.jpg" alt="" />
       </div>
@@ -18,7 +22,7 @@ function Card(props) {
           <p className="fst-italic">{props.location}</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
