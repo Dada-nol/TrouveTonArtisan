@@ -1,7 +1,7 @@
 import React from "react";
 
 function ArtisanDetail() {
-  return <div>ArtisanDetail</div>;
+  return <div></div>;
 }
 
 export default ArtisanDetail;

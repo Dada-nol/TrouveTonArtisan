@@ -6,22 +6,24 @@ function ArtisanCategory(props) {
   const { datas } = useContext(ArtisanContext);
 
   return (
-    <div className="artisan-category">
-      {datas.map((datas) => {
-        if (props.category === datas.category) {
-          return (
-            <Card
-              key={datas.id}
-              name={datas.name}
-              note={datas.note}
-              location={datas.location}
-              specialty={datas.specialty}
-            ></Card>
-          );
-        } else {
-          return null;
-        }
-      })}
+    <div className="card-list container ">
+      <div className="row d-flex justify-content-center">
+        {datas.map((artisan) => {
+          if (props.category === artisan.category) {
+            return (
+              <Card
+                key={artisan.id}
+                name={artisan.name}
+                note={artisan.note}
+                location={artisan.location}
+                specialty={artisan.specialty}
+              ></Card>
+            );
+          } else {
+            return null;
+          }
+        })}
+      </div>
     </div>
   );
 }

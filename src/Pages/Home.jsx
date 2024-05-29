@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import Card from "../Components/Card";
+import { ArtisanContext } from "../Context/ArtisanContext";
 import "../Css/style.css";
 
 const Home = () => {
+  const { datas } = useContext(ArtisanContext);
+
   return (
     <>
       <section className="container shadow p-3 mt-5 mb-5 bg-body rounded">
@@ -33,7 +37,23 @@ const Home = () => {
       <section className="container shadow p-3 mt-3 mb-3 bg-body rounded">
         <div className="row">
           <h2 className="fw-bold">Les employés du mois</h2>
-          <div>{/* mettre les employé du mois ici */}</div>
+          <div className="row d-flex justify-content-center">
+            {datas.map((artisan, i) => {
+              if (datas[i].top === true) {
+                return (
+                  <Card
+                    key={artisan.id}
+                    name={artisan.name}
+                    note={artisan.note}
+                    location={artisan.location}
+                    specialty={artisan.specialty}
+                  ></Card>
+                );
+              } else {
+                return null;
+              }
+            })}
+          </div>
         </div>
       </section>
     </>
