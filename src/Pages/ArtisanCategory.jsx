@@ -23,6 +23,7 @@ function ArtisanCategory(props) {
               return (
                 <Card
                   key={artisan.id}
+                  id={artisan.id}
                   name={artisan.name}
                   note={artisan.note}
                   location={artisan.location}
