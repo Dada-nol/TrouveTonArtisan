@@ -1,9 +1,90 @@
+main {
+  background-color: #f1f8fc;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+main section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .card {
   padding: 0;
   width: 300px;
+  text-decoration: none;
 }
-.card p {
+.card .card-title {
+  color: #00497c;
+  line-height: 1.2;
+}
+.card .card-content {
   color: #0074c7;
+}
+.card .card-content p {
+  margin: 5px 0 0 0;
+}
+.card .rating {
+  font-size: 15px;
+}
+.card:hover {
+  text-decoration: underline;
+}
+
+.step li,
+.step p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #384050;
+}
+.step h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00497c;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .step h1 {
+    font-size: 3rem;
+  }
+}
+.step h3 {
+  color: #0074c7;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00497c;
+  line-height: 1.2;
+}
+
+.bande {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border-top: 3px solid #0074c7;
+  border-bottom: 3px solid #0074c7;
+}
+.bande h1 {
+  color: #00497c;
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .bande h1 {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,9 @@
 @font-face {
   font-family: "Graphik";
-  src: url(../public/Font/Graphik-Bold-Trial.otf);
-  src: url(../public/Font/Graphik-Semibold-Trial.otf);
-  src: url(../public/Font/Graphik-Light-Trial.otf);
-  src: url(../public/Font/Graphik-Regular-Trial.otf);
+
+  src: local("Graphik Family");
 }
 
 * {
-  font-family: "Graphik", serif;
+  font-family: "Graphik", sans-serif;
 }

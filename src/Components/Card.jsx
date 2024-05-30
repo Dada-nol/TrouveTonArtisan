@@ -1,24 +1,43 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Rating } from "react-simple-star-rating";
 import "../Css/style.css";
 
 function Card(props) {
   return (
-    <div key={props.id} className="card col-md-6 col-lg-4 m-3">
+    <Link
+      key={props.id}
+      className="card col-md-6 col-lg-4 m-3"
+      to={`/Artisan/${props.id}`}
+    >
       <div>
         <img className="card-img-top img-fluide" src="Img/6495568.jpg" alt="" />
       </div>
 
       <div className="card-body ">
-        <div className="card-title">
-          <h3>{props.name}</h3>
+        <div className="card-title ">
+          <h3 className="fw-bold">{props.name}</h3>
         </div>
         <div className="card-content ">
-          <p className="fw-bold">{props.specialty}</p>
-          <p>{props.note}</p>
+          <p>{props.specialty}</p>
+
           <p className="fst-italic">{props.location}</p>
         </div>
+        <div className="rating">
+          <Rating
+            allowFraction={true}
+            initialValue={props.note}
+            readonly={true}
+          />
+          {/* <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span> */}
+          <p className="fst-italic">{props.note}</p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

@@ -5,10 +5,94 @@ $Gris: #384050;
 $Rouge: #cd2c2e;
 $Vert: #82b864;
 
+@mixin flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin titleColor {
+  color: $Bleu-fonce;
+  line-height: 1.2;
+}
+
+main {
+  background-color: $Blanc;
+  padding: {
+    top: 40px;
+    bottom: 40px;
+  }
+  section {
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+  }
+}
+
 .card {
   padding: 0;
   width: 300px;
-  p {
+  text-decoration: none;
+  .card-title {
+    @include titleColor;
+  }
+  .card-content {
     color: $Bleu-clair;
+    p {
+      margin: 5px 0 0 0;
+    }
+  }
+  .rating {
+    font-size: 15px;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.step {
+  li,
+  p {
+    @include flexCenter;
+    color: $Gris;
+  }
+  h1 {
+    @include flexCenter;
+    @include titleColor;
+    font-weight: 700;
+    font-size: 2rem;
+
+    @media screen and (min-width: 991px) {
+      font-size: 3rem;
+    }
+  }
+  h3 {
+    color: $Bleu-clair;
+  }
+}
+
+h2 {
+  @include flexCenter;
+  @include titleColor;
+}
+
+.bande {
+  @include flexCenter;
+  margin-bottom: 50px;
+  border: {
+    top: 3px solid $Bleu-clair;
+    bottom: 3px solid $Bleu-clair;
+  }
+
+  h1 {
+    @include titleColor;
+    font-weight: 700;
+    font-size: 2rem;
+
+    @media screen and (min-width: 991px) {
+      font-size: 3rem;
+    }
   }
 }
