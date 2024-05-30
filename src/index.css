@@ -1,12 +1,7 @@
 @font-face {
   font-family: "Graphik";
-  src: url("../public/Font/Graphik-Regular-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-Bold-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-Semibold-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-Light-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-Black-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-RegularItalic-Trial.otf") format("otf"),
-    url("../public/Font/Graphik-Thin-Trial.otf") format("otf");
+
+  src: local("Graphik Family");
 }
 
 * {

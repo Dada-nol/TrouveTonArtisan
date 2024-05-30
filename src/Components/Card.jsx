@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Rating } from "react-simple-star-rating";
 import "../Css/style.css";
 
 function Card(props) {
@@ -19,9 +20,21 @@ function Card(props) {
         </div>
         <div className="card-content ">
           <p>{props.specialty}</p>
-          <p>{props.note}</p>
 
           <p className="fst-italic">{props.location}</p>
+        </div>
+        <div className="rating">
+          <Rating
+            allowFraction={true}
+            initialValue={props.note}
+            readonly={true}
+          />
+          {/* <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span> */}
+          <p className="fst-italic">{props.note}</p>
         </div>
       </div>
     </Link>
