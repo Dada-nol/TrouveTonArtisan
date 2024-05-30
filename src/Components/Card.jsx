@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Css/style.css";
 
 function Card(props) {
   return (
-    <a
+    <Link
       key={props.id}
       className="card col-md-6 col-lg-4 m-3"
-      href={`/Artisan/${props.id}`}
+      to={`/Artisan/${props.id}`}
     >
       <div>
         <img className="card-img-top img-fluide" src="Img/6495568.jpg" alt="" />
@@ -19,10 +20,11 @@ function Card(props) {
         <div className="card-content ">
           <p>{props.specialty}</p>
           <p>{props.note}</p>
+
           <p className="fst-italic">{props.location}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

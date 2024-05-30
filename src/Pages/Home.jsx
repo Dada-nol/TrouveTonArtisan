@@ -8,9 +8,9 @@ const Home = () => {
 
   return (
     <>
-      <section className="container shadow p-3 mt-5 mb-5 bg-body rounded">
+      <section className="container shadow p-3 bg-body ">
         <div className="step">
-          <h1 className="fw-bold mb-5">Comment trouver mon artisan ?</h1>
+          <h1 className="mb-5">Comment trouver mon artisan ?</h1>
           <p>L'explication étape par étape du fonctionnement du site : </p>
 
           <ul>
@@ -34,26 +34,24 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container shadow p-3 mt-3 mb-3 bg-body rounded">
-        <div className="row">
-          <h2 className="fw-bold">Les employés du mois</h2>
-          <div className="row d-flex justify-content-center">
-            {datas.map((artisan, i) => {
-              if (datas[i].top === true) {
-                return (
-                  <Card
-                    key={artisan.id}
-                    name={artisan.name}
-                    note={artisan.note}
-                    location={artisan.location}
-                    specialty={artisan.specialty}
-                  ></Card>
-                );
-              } else {
-                return null;
-              }
-            })}
-          </div>
+      <section className="container shadow p-3 bg-body text-center">
+        <h2 className="fw-bold">Les employés du mois</h2>
+        <div className="row d-flex justify-content-center">
+          {datas.map((artisan, i) => {
+            if (datas[i].top === true) {
+              return (
+                <Card
+                  key={artisan.id}
+                  name={artisan.name}
+                  note={artisan.note}
+                  location={artisan.location}
+                  specialty={artisan.specialty}
+                ></Card>
+              );
+            } else {
+              return null;
+            }
+          })}
         </div>
       </section>
     </>

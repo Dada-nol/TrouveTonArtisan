@@ -7,19 +7,16 @@ function ArtisanCategory(props) {
 
   return (
     <>
-      <section className="mt-5 mb-5 ">
+      <section className="text-center">
         <div className="bande">
-          <p>Voici la liste des artisans dans la catégory : </p>
           <h1 className="m-3">{props.category}</h1>
-          <p>
-            Pour prendre contact avec l'artisan avec lequel vous souhaitez
-            travailler, veuillez cliquez sur sa carte pour y découvrir ses
-            coordonnées.
-          </p>
         </div>
       </section>
 
-      <div className="card-list container ">
+      <section className="card-list container text-center">
+        <h2>
+          Voici la liste des artisans dans la catégory "{props.category}" :{" "}
+        </h2>
         <div className="row d-flex justify-content-center">
           {datas.map((artisan) => {
             if (props.category === artisan.category) {
@@ -37,7 +34,7 @@ function ArtisanCategory(props) {
             }
           })}
         </div>
-      </div>
+      </section>
     </>
   );
 }
