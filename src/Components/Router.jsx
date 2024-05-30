@@ -11,9 +11,9 @@ function Router() {
     return (
       <>
         <NavBar></NavBar>
-        <div className="content">
+        <main className="content">
           <Outlet></Outlet>
-        </div>
+        </main>
         <Footer></Footer>
       </>
     );

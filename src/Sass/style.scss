@@ -5,11 +5,25 @@ $Gris: #384050;
 $Rouge: #cd2c2e;
 $Vert: #82b864;
 
-@mixin flex {
+@mixin flexCenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin titleFont {
+  color: $Bleu-fonce;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  @media screen and (min-width: 991px) {
+    font-size: 3rem;
+  }
+}
+
+main {
+  background-color: $Blanc;
 }
 
 .card {
@@ -23,12 +37,12 @@ $Vert: #82b864;
 .step {
   li,
   p {
-    @include flex;
+    @include flexCenter;
     color: $Gris;
   }
   h1 {
-    @include flex;
-    color: $Bleu-fonce;
+    @include flexCenter;
+    @include titleFont;
   }
   h3 {
     color: $Bleu-clair;
@@ -36,6 +50,18 @@ $Vert: #82b864;
 }
 
 h2 {
-  @include flex;
-  color: $Bleu-fonce;
+  @include flexCenter;
+  @include titleFont;
+}
+
+.bande {
+  @include flexCenter;
+  border: {
+    top: 5px solid $Bleu-clair;
+    bottom: 5px solid $Bleu-clair;
+  }
+
+  h1 {
+    @include titleFont;
+  }
 }

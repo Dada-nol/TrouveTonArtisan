@@ -13,11 +13,11 @@ function Card(props) {
       </div>
 
       <div className="card-body ">
-        <div className="card-title">
-          <h3>{props.name}</h3>
+        <div className="card-title ">
+          <h3 className="fw-bold">{props.name}</h3>
         </div>
         <div className="card-content ">
-          <p className="fw-bold">{props.specialty}</p>
+          <p>{props.specialty}</p>
           <p>{props.note}</p>
           <p className="fst-italic">{props.location}</p>
         </div>
