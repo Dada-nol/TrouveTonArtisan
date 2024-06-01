@@ -37,6 +37,20 @@ function ArtisanCategory(props) {
                 ) {
                   //returns filtered array
                   return artisan;
+                } else if (
+                  artisan.specialty
+                    .toLowerCase()
+                    .includes(filterText.toLowerCase())
+                ) {
+                  //returns filtered array
+                  return artisan;
+                } else if (
+                  artisan.location
+                    .toLowerCase()
+                    .includes(filterText.toLowerCase())
+                ) {
+                  //returns filtered array
+                  return artisan;
                 } else {
                   return null;
                 }
