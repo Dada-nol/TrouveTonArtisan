@@ -25,27 +25,28 @@ function Router() {
         <Routes>
           <Route path="/" element={<Layout></Layout>}>
             <Route path="/" element={<Home />}></Route>
-            <Route
-              path="/Bâtiment"
-              element={<ArtisanCategory category="Bâtiment" />}
-            ></Route>
-            <Route
-              path="/Services"
-              element={<ArtisanCategory category="Services" />}
-            ></Route>
-            <Route
-              path="/Alimentation"
-              element={<ArtisanCategory category="Alimentation" />}
-            ></Route>
-            <Route
-              path="/Fabrication"
-              element={<ArtisanCategory category="Fabrication" />}
-            ></Route>
+
             <Route
               path="/artisan/:id"
               element={<ArtisanDetail></ArtisanDetail>}
             ></Route>
           </Route>
+          <Route
+            path="/Bâtiment"
+            element={<ArtisanCategory category="Bâtiment" />}
+          ></Route>
+          <Route
+            path="/Services"
+            element={<ArtisanCategory category="Services" />}
+          ></Route>
+          <Route
+            path="/Alimentation"
+            element={<ArtisanCategory category="Alimentation" />}
+          ></Route>
+          <Route
+            path="/Fabrication"
+            element={<ArtisanCategory category="Fabrication" />}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>
