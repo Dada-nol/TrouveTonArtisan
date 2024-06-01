@@ -8,10 +8,14 @@ function Card(props) {
     <Link
       key={props.id}
       className="card col-md-6 col-lg-4 m-3"
-      to={`/Artisan/${props.id}`}
+      to={`/artisan/${props.id}`}
     >
       <div>
-        <img className="card-img-top img-fluide" src="Img/6495568.jpg" alt="" />
+        <img
+          className="card-img-top img-fluide"
+          src="/Img/6495568.jpg"
+          alt=""
+        />
       </div>
 
       <div className="card-body ">
@@ -29,11 +33,6 @@ function Card(props) {
             initialValue={props.note}
             readonly={true}
           />
-          {/* <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span> */}
           <p className="fst-italic">{props.note}</p>
         </div>
       </div>

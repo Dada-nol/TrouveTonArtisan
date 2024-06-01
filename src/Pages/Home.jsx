@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Card from "../Components/Card";
 import { ArtisanContext } from "../Context/ArtisanContext";
-import "../Css/style.css";
 
 const Home = () => {
   const { datas } = useContext(ArtisanContext);
@@ -42,6 +41,7 @@ const Home = () => {
               return (
                 <Card
                   key={artisan.id}
+                  id={artisan.id}
                   name={artisan.name}
                   note={artisan.note}
                   location={artisan.location}

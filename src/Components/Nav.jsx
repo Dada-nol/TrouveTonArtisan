@@ -8,7 +8,7 @@ export default function NavBar() {
         <div className="container d-flex ">
           <div>
             <Link to="/" className="navbar-brand">
-              <img className="logo" src="Img/Logo.png" alt=""></img>
+              <img className="logo" src="/Img/Logo.png" alt=""></img>
             </Link>
           </div>
 

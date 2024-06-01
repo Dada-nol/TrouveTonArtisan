@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import ArtisanCategory from "../Pages/ArtisanCategory";
-import Artisan from "../Pages/ArtisanDetail";
+import ArtisanDetail from "../Pages/ArtisanDetail";
 import Home from "../Pages/Home";
 import Footer from "./Footer";
 import NavBar from "./Nav";
@@ -41,9 +41,10 @@ function Router() {
               path="/Fabrication"
               element={<ArtisanCategory category="Fabrication" />}
             ></Route>
-            <Route path="/Artisan/" element={<Artisan></Artisan>}>
-              <Route path=":id" element={<Artisan></Artisan>}></Route>
-            </Route>
+            <Route
+              path="/artisan/:id"
+              element={<ArtisanDetail></ArtisanDetail>}
+            ></Route>
           </Route>
         </Routes>
       </BrowserRouter>

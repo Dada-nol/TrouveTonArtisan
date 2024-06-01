@@ -96,3 +96,17 @@ h2 {
     }
   }
 }
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  button {
+    width: 100px;
+  }
+  .selected-button {
+    background-color: $Bleu-clair;
+    color: $Blanc;
+    border: none;
+  }
+}
