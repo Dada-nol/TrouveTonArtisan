@@ -11,7 +11,11 @@ function Card(props) {
       to={`/artisan/${props.id}`}
     >
       <div>
-        <img className="card-img-top img-fluide" src="Img/6495568.jpg" alt="" />
+        <img
+          className="card-img-top img-fluide"
+          src="/Img/6495568.jpg"
+          alt=""
+        />
       </div>
 
       <div className="card-body ">
