@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import ArtisanCategory from "../Pages/ArtisanCategory";
 import ArtisanDetail from "../Pages/ArtisanDetail";
+import Error404 from "../Pages/Error404";
 import Home from "../Pages/Home";
 import Footer from "./Footer";
 import NavBar from "./Nav";
@@ -30,6 +31,7 @@ function Router() {
               path="/artisan/:id"
               element={<ArtisanDetail></ArtisanDetail>}
             ></Route>
+            <Route path="*" element={<Error404></Error404>}></Route>
           </Route>
           <Route
             path="/Bâtiment"
