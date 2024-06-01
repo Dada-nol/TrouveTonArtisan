@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { ArtisanContext } from "../Context/ArtisanContext";
 
 function Contact() {
+  const { datas } = useContext(ArtisanContext);
+  const { id } = useParams();
+  const artisan = datas.find((artisan) => artisan.id === id);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(
+      `Votre message a bien été envoyé à l'adresse suivante : ${artisan.email}`
+    );
+  };
   return (
     <>
       <form>
@@ -68,7 +79,13 @@ function Contact() {
         </div>
 
         <div className="text-center">
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
+          >
             Envoyer
           </button>
         </div>

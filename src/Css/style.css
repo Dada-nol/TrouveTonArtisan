@@ -87,10 +87,18 @@ h2 {
   }
 }
 
-.btn.group {
+.btn-group {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.btn-group button {
+  width: 100px;
+}
+.btn-group .selected-button {
+  background-color: #0074c7;
+  color: #f1f8fc;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
