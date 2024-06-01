@@ -6,6 +6,7 @@ function ButtonGrp({ buttons, isSelected, setIsSelected }) {
       {buttons.map((text, index) => {
         return (
           <button
+            key={text}
             className={isSelected === index ? "btn" : "selected-button"}
             onClick={() => setIsSelected(index)}
           >
