@@ -8,6 +8,9 @@ function Footer() {
       <div className="container text-center text-light p-3">
         <div className="row">
           <div className="col-lg col-md-6">
+            <img className="logo img-fluide" src="/Img/Logo.png" alt=""></img>
+          </div>
+          <div className="col-lg col-md-6">
             <h5 className="mb-3">Lyon</h5>
             <p>101 cours Charlemagne</p>
             <p>CS 20033</p>

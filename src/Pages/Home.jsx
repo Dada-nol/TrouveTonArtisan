@@ -6,6 +6,7 @@ import { ArtisanContext } from "../Context/ArtisanContext";
 const Home = () => {
   const { datas } = useContext(ArtisanContext);
   const [filterText, setFilterText] = useState("");
+  
   return (
     <>
       <NavBar
