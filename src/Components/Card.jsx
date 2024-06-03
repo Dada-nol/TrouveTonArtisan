@@ -14,7 +14,7 @@ function Card(props) {
         <img
           className="card-img-top img-fluide"
           src="/Img/6495568.jpg"
-          alt=""
+          alt="Illustration d'une personne travaillant dans des chantiers"
         />
       </div>
 

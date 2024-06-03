@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import Card from "../Components/Card";
-import Footer from "../Components/Footer";
 import NavBar from "../Components/Nav";
 import { ArtisanContext } from "../Context/ArtisanContext";
 
@@ -74,8 +73,6 @@ function ArtisanCategory(props) {
           </div>
         </section>
       </main>
-
-      <Footer></Footer>
     </>
   );
 }
