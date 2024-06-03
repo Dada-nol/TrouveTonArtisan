@@ -4,5 +4,17 @@
 .footer p {
   margin: 5px;
 }
+.footer .footer-link {
+  text-decoration: none;
+  color: white;
+}
+.footer .logo {
+  width: 200px;
+}
+@media screen and (min-width: 991px) {
+  .footer .logo {
+    width: 300px;
+  }
+}
 
-/*# sourceMappingURL=Footer.css.map */
+/*# sourceMappingURL=footer.css.map */

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Css/Footer.css";
 
 function Footer() {
@@ -6,6 +7,9 @@ function Footer() {
     <footer className="footer">
       <div className="container text-center text-light p-3">
         <div className="row">
+          <div className="col-lg col-md-6">
+            <img className="logo img-fluide" src="/Img/Logo.png" alt=""></img>
+          </div>
           <div className="col-lg col-md-6">
             <h5 className="mb-3">Lyon</h5>
             <p>101 cours Charlemagne</p>
@@ -17,13 +21,42 @@ function Footer() {
 
           <div className="col-lg col-md-6">
             <h5 className="mb-3">Mention légales</h5>
-            <p>Données personelles</p>
+            <p>
+              <Link className="footer-link" to="/Données-personnelles">
+                Données personelles
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Mentions-légales">
+                Mentions légales
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Accessibilité">
+                Accessibilité : Partiellement conforme
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Presse">
+                Presse
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Marchés">
+                Marchés publics
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Région">
+                Venir à la région
+              </Link>
+            </p>
+            <p>
+              <Link className="footer-link" to="/Contact">
+                Contact
+              </Link>
+            </p>
 
-            <p>Accessibilité : Partiellement conforme</p>
-            <p>Presse</p>
-            <p>Marchés publics</p>
-            <p>Venir à la région</p>
-            <p>Contact</p>
             <p>Gestion des cookies</p>
           </div>
         </div>

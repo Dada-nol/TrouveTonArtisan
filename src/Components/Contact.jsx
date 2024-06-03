@@ -82,7 +82,7 @@ function Contact() {
           <button
             type="submit"
             className="btn btn-primary"
-            onClick={(e) => {
+            onSubmit={(e) => {
               handleSubmit(e);
             }}
           >

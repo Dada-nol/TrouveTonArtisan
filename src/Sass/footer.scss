@@ -4,4 +4,18 @@
   p {
     margin: 5px;
   }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  @media screen and (min-width: 991px) {
+    .logo {
+      width: 300px;
+    }
+  }
 }

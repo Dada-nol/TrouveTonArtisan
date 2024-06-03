@@ -35,9 +35,7 @@ nav {
   }
 
   .navbar-toggler {
-    &:focus {
-      box-shadow: 1px 1px 1px 1px #0074c7;
-    }
+    box-shadow: 1px 1px 1px 1px #0074c7;
   }
 
   @media screen and (min-width: 991px) {

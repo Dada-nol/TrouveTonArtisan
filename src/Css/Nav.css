@@ -27,7 +27,7 @@ nav input {
 nav .form-control {
   border: none;
 }
-nav .navbar-toggler:focus {
+nav .navbar-toggler {
   box-shadow: 1px 1px 1px 1px #0074c7;
 }
 @media screen and (min-width: 991px) {
@@ -47,4 +47,4 @@ nav .navbar-toggler:focus {
   }
 }
 
-/*# sourceMappingURL=Nav.css.map */
+/*# sourceMappingURL=nav.css.map */
