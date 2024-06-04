@@ -29,26 +29,22 @@ function ArtisanCategory(props) {
 
               .filter((artisan) => {
                 if (filterText === "") {
-                  //if query is empty
                   return artisan;
                 } else if (
                   artisan.name.toLowerCase().includes(filterText.toLowerCase())
                 ) {
-                  //returns filtered array
                   return artisan;
                 } else if (
                   artisan.specialty
                     .toLowerCase()
                     .includes(filterText.toLowerCase())
                 ) {
-                  //returns filtered array
                   return artisan;
                 } else if (
                   artisan.location
                     .toLowerCase()
                     .includes(filterText.toLowerCase())
                 ) {
-                  //returns filtered array
                   return artisan;
                 } else {
                   return null;

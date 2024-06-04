@@ -25,7 +25,7 @@ function ArtisanDetail() {
   const [filterText, setFilterText] = useState("");
   const { datas } = useContext(ArtisanContext);
   const { id } = useParams();
-  const artisan = datas.find((artisan) => artisan.id === id);
+  const artisan = datas.find((artisan) => artisan.id === Number(id));
   const [isSelected, setIsSelected] = useState(0);
   const buttons = ["À propos", "Contact"];
 
