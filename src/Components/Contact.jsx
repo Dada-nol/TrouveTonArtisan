@@ -8,13 +8,17 @@ function Contact() {
   const artisan = datas.find((artisan) => artisan.id === Number(id));
   const handleSubmit = (e) => {
     e.preventDefault();
+    e.target.reset();
+  };
+
+  const Alert = () => {
     alert(
       `Votre message a bien été envoyé à l'adresse suivante : ${artisan.email}`
     );
   };
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="exampleInputName1" className="form-label">
             Votre nom
@@ -82,8 +86,8 @@ function Contact() {
           <button
             type="submit"
             className="btn btn-primary"
-            onSubmit={(e) => {
-              handleSubmit(e);
+            onClick={() => {
+              Alert();
             }}
           >
             Envoyer
