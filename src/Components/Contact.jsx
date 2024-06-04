@@ -5,7 +5,7 @@ import { ArtisanContext } from "../Context/ArtisanContext";
 function Contact() {
   const { datas } = useContext(ArtisanContext);
   const { id } = useParams();
-  const artisan = datas.find((artisan) => artisan.id === id);
+  const artisan = datas.find((artisan) => artisan.id === Number(id));
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(

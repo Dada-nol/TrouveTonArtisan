@@ -5,7 +5,7 @@ import { ArtisanContext } from "../Context/ArtisanContext";
 function About() {
   const { datas } = useContext(ArtisanContext);
   const { id } = useParams();
-  const artisan = datas.find((artisan) => artisan.id === id);
+  const artisan = datas.find((artisan) => artisan.id === Number(id));
   return (
     <>
       <h3>Pour en savoir plus sur votre artisan : </h3>
