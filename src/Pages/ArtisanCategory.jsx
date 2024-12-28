@@ -1,17 +1,18 @@
-import React, { useContext, useState } from "react";
+import React, { useContext /* , useState */ } from "react";
 import Card from "../components/Card";
-import NavBar from "../components/Nav";
+/* import NavBar from "../components/Nav"; */
 import { ArtisanContext } from "../context/ArtisanContext";
 
+// Enlève moi cette nav
 function ArtisanCategory(props) {
   const { datas } = useContext(ArtisanContext);
-  const [filterText, setFilterText] = useState("");
+  /*   const [filterText, setFilterText] = useState(""); */
   return (
     <>
-      <NavBar
+      {/*       <NavBar
         filterText={filterText}
         onFilterTextChange={setFilterText}
-      ></NavBar>
+      ></NavBar> */}
 
       <main>
         <section className="text-center">
@@ -27,7 +28,7 @@ function ArtisanCategory(props) {
           <div className="row d-flex justify-content-center">
             {datas
 
-              .filter((artisan) => {
+              /* .filter((artisan) => {
                 if (filterText === "") {
                   return artisan;
                 } else if (
@@ -49,7 +50,7 @@ function ArtisanCategory(props) {
                 } else {
                   return null;
                 }
-              })
+              }) */
               .map((artisan) => {
                 if (props.category === artisan.category) {
                   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import ArtisanCategory from "../pages/ArtisanCategory";
 import ArtisanDetail from "../pages/ArtisanDetail";
@@ -12,11 +12,18 @@ import MentionLegale from "../pages/PagesVide/MentionLegale";
 import Presse from "../pages/PagesVide/Presse";
 import Région from "../pages/PagesVide/Région";
 import Footer from "./Footer";
+import NavBar from "./Nav";
 
 function Router() {
+  const [filterText, setFilterText] = useState("");
+
   const Layout = () => {
     return (
       <>
+        <NavBar
+          filterText={filterText}
+          onFilterTextChange={setFilterText}
+        ></NavBar>
         <>
           <Outlet></Outlet>
         </>

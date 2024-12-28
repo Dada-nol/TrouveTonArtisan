@@ -3,7 +3,7 @@ import React from "react";
 function SearchBar({ filterText, onFilterTextChange }) {
   return (
     <form role="search">
-      <div className=" form-control pt-1 d-flex align-items-center justify-content-between">
+      <div className="form-control pt-1 d-flex align-items-center justify-content-between">
         <div>
           <input
             className="border-0"
