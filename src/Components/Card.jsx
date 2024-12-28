@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
-import "../Css/style.css";
+import "../css/style.css";
 
 function Card(props) {
   return (
@@ -18,8 +18,8 @@ function Card(props) {
         />
       </div>
 
-      <div className="card-body ">
-        <div className="card-title ">
+      <div className="card-body">
+        <div className="card-title">
           <h3 className="fw-bold">{props.name}</h3>
         </div>
         <div className="card-content ">

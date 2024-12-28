@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
-import Card from "../Components/Card";
-import NavBar from "../Components/Nav";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import Card from "../components/Card";
+import NavBar from "../components/Nav";
+import { ArtisanContext } from "../context/ArtisanContext";
 
 function ArtisanCategory(props) {
   const { datas } = useContext(ArtisanContext);

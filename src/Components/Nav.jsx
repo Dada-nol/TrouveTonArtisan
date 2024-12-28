@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Css/Nav.css";
+import "../css/Nav.css";
 import SearchBar from "./SearchBar";
 
 export default function NavBar({ filterText, onFilterTextChange }) {

@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import Card from "../Components/Card";
-import NavBar from "../Components/Nav";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import Card from "../components/Card";
+import NavBar from "../components/Nav";
+import { ArtisanContext } from "../context/ArtisanContext";
 
 const Home = () => {
   const { datas } = useContext(ArtisanContext);
   const [filterText, setFilterText] = useState("");
-  
+
   return (
     <>
       <NavBar

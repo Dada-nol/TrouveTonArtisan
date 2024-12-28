@@ -1,5 +1,5 @@
 import React from "react";
-import datas from "../Data/datas.json";
+import datas from "../data/datas.json";
 
 import { Link } from "react-router-dom";
 

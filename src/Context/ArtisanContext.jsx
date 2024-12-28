@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import datas from "../Data/datas.json";
+import datas from "../data/datas.json";
 
 export const ArtisanContext = createContext(null);
 

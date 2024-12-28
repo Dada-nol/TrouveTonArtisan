@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
-import About from "../Components/About";
-import ButtonGrp from "../Components/ButtonGrp";
-import Contact from "../Components/Contact";
-import NavBar from "../Components/Nav";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import About from "../components/About";
+import ButtonGrp from "../components/ButtonGrp";
+import Contact from "../components/Contact";
+import NavBar from "../components/Nav";
+import { ArtisanContext } from "../context/ArtisanContext";
 
-import "../Css/style.css";
+import "../css/style.css";
 
 const RenderComponent = ({ index }) => {
   switch (index) {
