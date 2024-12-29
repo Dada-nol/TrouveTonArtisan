@@ -12,29 +12,32 @@ nav .nav-link:hover {
   text-decoration: underline;
   color: #00497c;
 }
-nav form {
+nav form .form-control {
   border-bottom: solid 1px #0074c7;
   border-right: solid 1px #0074c7;
 }
 nav form input {
-  color: #384050;
   outline: none;
+  color: #384050;
 }
 nav form ul {
-  max-width: 300px;
+  border: solid 1px #0074c7;
+  border-top: none;
+  max-width: auto;
   height: auto;
   word-wrap: break-word;
   text-align: start;
   cursor: pointer;
 }
 nav form li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  border-bottom: solid 1px #0074c7;
   list-style: none;
 }
-nav span {
-  font-weight: bold;
-}
-nav .form-control {
-  border: none;
+nav form li:last-child {
+  border-bottom: none;
 }
 nav .navbar-toggler {
   box-shadow: 1px 1px 1px 1px #0074c7;

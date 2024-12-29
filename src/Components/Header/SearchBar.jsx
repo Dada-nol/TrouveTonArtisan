@@ -35,15 +35,20 @@ function SearchBar() {
             value={searchTerm}
             onChange={handleInputChange}
           ></input>
-
-          <ul>
-            {filteredData.map((item) => (
-              <li key={item.id}>
-                {item.name} - {item.specialty} - {item.location}
-              </li>
-            ))}
-          </ul>
         </div>
+      </div>
+      <div>
+        <ul>
+          {filteredData.map((item) => {
+            if (searchTerm.trim() !== "") {
+              return (
+                <li key={item.id}>
+                  {item.name} - {item.specialty} - {item.location} <br /> <br />
+                </li>
+              );
+            } else return false;
+          })}
+        </ul>
       </div>
     </form>
   );
