@@ -11,27 +11,43 @@ import Marchés from "../pages/PagesVide/Marchés";
 import MentionLegale from "../pages/PagesVide/MentionLegale";
 import Presse from "../pages/PagesVide/Presse";
 import Région from "../pages/PagesVide/Région";
-import Footer from "./Footer";
-import NavBar from "./Nav";
+import Footer from "./Footer/Footer";
+import NavBar from "./Header/Nav";
+
+const Layout = () => {
+  /*   const { datas } = useContext(ArtisanContext); */
+  const [query, setQuery] = useState("");
+  /*   const navigate = useNavigate(); */
+  return (
+    <>
+      <NavBar query={query} setQuery={setQuery}></NavBar>
+
+      {/* {datas.filter((artisan) => {
+        if (query === "") {
+          return artisan;
+        } else if (artisan.name.toLowerCase().includes(query.toLowerCase())) {
+          navigate(`/artisan/${artisan.id}`);
+        } else if (
+          artisan.specialty.toLowerCase().includes(query.toLowerCase())
+        ) {
+          return artisan;
+        } else if (
+          artisan.location.toLowerCase().includes(query.toLowerCase())
+        ) {
+          return artisan;
+        } else {
+          return null;
+        }
+      })} */}
+      <>
+        <Outlet></Outlet>
+      </>
+      <Footer></Footer>
+    </>
+  );
+};
 
 function Router() {
-  const [filterText, setFilterText] = useState("");
-
-  const Layout = () => {
-    return (
-      <>
-        <NavBar
-          filterText={filterText}
-          onFilterTextChange={setFilterText}
-        ></NavBar>
-        <>
-          <Outlet></Outlet>
-        </>
-        <Footer></Footer>
-      </>
-    );
-  };
-
   return (
     <>
       <BrowserRouter>

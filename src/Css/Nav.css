@@ -15,10 +15,6 @@ nav .nav-link:hover {
 nav form {
   border-bottom: solid 1px #0074c7;
   border-right: solid 1px #0074c7;
-  padding-right: 3px;
-}
-nav form:active {
-  border: solid 2px #82b864;
 }
 nav input {
   color: #384050;
@@ -47,4 +43,4 @@ nav .navbar-toggler {
   }
 }
 
-/*# sourceMappingURL=nav.css.map */
+/*# sourceMappingURL=Nav.css.map */

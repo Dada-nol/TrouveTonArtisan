@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "../css/Nav.css";
+import "../../css/Nav.css";
 import SearchBar from "./SearchBar";
 
-export default function NavBar({ filterText, onFilterTextChange }) {
+export default function NavBar({ query, setQuery }) {
   return (
     <header>
       <nav className="navbar navbar-expand-lg shadow-sm p-0">
@@ -54,10 +54,7 @@ export default function NavBar({ filterText, onFilterTextChange }) {
             id="searchbar"
             className="collapse navbar-collapse align-self-start mt-3"
           >
-            <SearchBar
-              filterText={filterText}
-              onFilterTextChange={onFilterTextChange}
-            ></SearchBar>
+            <SearchBar query={query} setQuery={setQuery}></SearchBar>
           </div>
           <div
             className="collapse navbar-collapse align-self-center mt-5"
