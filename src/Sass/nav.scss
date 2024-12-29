@@ -19,11 +19,24 @@ nav {
   form {
     border-bottom: solid 1px #0074c7;
     border-right: solid 1px #0074c7;
+    input {
+      color: #384050;
+      outline: none;
+    }
+    ul {
+      max-width: 300px;
+      height: auto;
+      word-wrap: break-word;
+      text-align: start;
+      cursor: pointer;
+    }
+    li {
+      list-style: none;
+    }
   }
 
-  input {
-    color: #384050;
-    outline: none;
+  span {
+    font-weight: bold;
   }
 
   .form-control {

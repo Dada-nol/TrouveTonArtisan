@@ -16,9 +16,22 @@ nav form {
   border-bottom: solid 1px #0074c7;
   border-right: solid 1px #0074c7;
 }
-nav input {
+nav form input {
   color: #384050;
   outline: none;
+}
+nav form ul {
+  max-width: 300px;
+  height: auto;
+  word-wrap: break-word;
+  text-align: start;
+  cursor: pointer;
+}
+nav form li {
+  list-style: none;
+}
+nav span {
+  font-weight: bold;
 }
 nav .form-control {
   border: none;

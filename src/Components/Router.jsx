@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import ArtisanCategory from "../pages/ArtisanCategory";
 import ArtisanDetail from "../pages/ArtisanDetail";
@@ -15,30 +15,9 @@ import Footer from "./Footer/Footer";
 import NavBar from "./Header/Nav";
 
 const Layout = () => {
-  /*   const { datas } = useContext(ArtisanContext); */
-  const [query, setQuery] = useState("");
-  /*   const navigate = useNavigate(); */
   return (
     <>
-      <NavBar query={query} setQuery={setQuery}></NavBar>
-
-      {/* {datas.filter((artisan) => {
-        if (query === "") {
-          return artisan;
-        } else if (artisan.name.toLowerCase().includes(query.toLowerCase())) {
-          navigate(`/artisan/${artisan.id}`);
-        } else if (
-          artisan.specialty.toLowerCase().includes(query.toLowerCase())
-        ) {
-          return artisan;
-        } else if (
-          artisan.location.toLowerCase().includes(query.toLowerCase())
-        ) {
-          return artisan;
-        } else {
-          return null;
-        }
-      })} */}
+      <NavBar></NavBar>
       <>
         <Outlet></Outlet>
       </>

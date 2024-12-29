@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../../css/Nav.css";
 import SearchBar from "./SearchBar";
 
-export default function NavBar({ query, setQuery }) {
+export default function NavBar() {
   return (
     <header>
       <nav className="navbar navbar-expand-lg shadow-sm p-0">
@@ -54,7 +54,7 @@ export default function NavBar({ query, setQuery }) {
             id="searchbar"
             className="collapse navbar-collapse align-self-start mt-3"
           >
-            <SearchBar query={query} setQuery={setQuery}></SearchBar>
+            <SearchBar></SearchBar>
           </div>
           <div
             className="collapse navbar-collapse align-self-center mt-5"
