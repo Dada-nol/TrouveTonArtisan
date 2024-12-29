@@ -1,20 +1,13 @@
-// Fais en sorte que la nav soit dans le router et non appelé séparemment sur chaque page
-
 import React, { useContext /* , useState */ } from "react";
 import Card from "../components/Card";
-/* import NavBar from "../components/Nav"; */
 import { ArtisanContext } from "../context/ArtisanContext";
 
 const Home = () => {
   const { datas } = useContext(ArtisanContext);
-  /*   const [filterText, setFilterText] = useState(""); */
 
   return (
     <>
-      {/*       <NavBar
-        filterText={filterText}
-        onFilterTextChange={setFilterText}
-      ></NavBar> */}
+
 
       <main>
         <section className="container shadow p-3 bg-body ">

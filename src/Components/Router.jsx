@@ -12,12 +12,12 @@ import MentionLegale from "../pages/PagesVide/MentionLegale";
 import Presse from "../pages/PagesVide/Presse";
 import Région from "../pages/PagesVide/Région";
 import Footer from "./Footer/Footer";
-import NavBar from "./Header/Nav";
+import Nav from "./Header/Nav";
 
 const Layout = () => {
   return (
     <>
-      <NavBar></NavBar>
+      <Nav></Nav>
       <>
         <Outlet></Outlet>
       </>

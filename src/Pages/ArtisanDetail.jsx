@@ -4,7 +4,6 @@ import { Rating } from "react-simple-star-rating";
 import About from "../components/About";
 import ButtonGrp from "../components/ButtonGrp";
 import Contact from "../components/Contact";
-/* import NavBar from "../components/Nav"; */
 import { ArtisanContext } from "../context/ArtisanContext";
 
 import "../css/style.css";
@@ -22,7 +21,6 @@ const RenderComponent = ({ index }) => {
 };
 
 function ArtisanDetail() {
-  /*   const [filterText, setFilterText] = useState(""); */
   const { datas } = useContext(ArtisanContext);
   const { id } = useParams();
   const artisan = datas.find((artisan) => artisan.id === Number(id));
@@ -31,10 +29,7 @@ function ArtisanDetail() {
 
   return (
     <>
-      {/*       <NavBar
-        filterText={filterText}
-        onFilterTextChange={setFilterText}
-      ></NavBar> */}
+
 
       <main>
         <div className="container shadow p-3 bg-body ">
