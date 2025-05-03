@@ -1,15 +1,21 @@
 
 # Project 
 
-Ce projet est un site web développé, en front-end, à l'aide de ReactJs.
+This project is a website developed on the front end using ReactJs.
 
-Il a été conçu dans le cadre d'un devoir et a pour but fictif d'aider la région Auvergne-Rhône-Alpes, a promouvoir les artisans se trouvant dans leur région. 
-Mais également pour les contacter plus facilement directement en ligne via un formulaire de contact.
+It was designed as part of an assignment and has the fictional goal of helping the Auvergne-Rhône-Alpes region promote artisans in their region.
+It also allows users to contact them more easily online via a contact form.
 
+## Features
+
+- Search for tradespeople by job category
+- Filter system to refine your search
+- View tradespeople's profiles
+- Option to contact a tradesperson directly through the website
 
 ## Run Locally
 
-1. Cloner the project
+1. Clone the project
 
 ```bash
   git clone https://github.com/Dada-nol/TrouveTonArtisan.git
