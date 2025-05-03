@@ -9,25 +9,25 @@ Mais également pour les contacter plus facilement directement en ligne via un f
 
 ## Run Locally
 
-Clone the project
+1. Cloner the project
 
 ```bash
   git clone https://github.com/Dada-nol/TrouveTonArtisan.git
 ```
 
-Go to the project directory
+2. Go to the project directory
 
 ```bash
   cd my-project
 ```
 
-Install dependencies
+3. Install dependencies
 
 ```bash
   npm install
 ```
 
-Start the server
+4. Start the server
 
 ```bash
   npm run start
