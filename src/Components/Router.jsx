@@ -1,30 +1,32 @@
 import React from "react";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
-import ArtisanCategory from "../Pages/ArtisanCategory";
-import ArtisanDetail from "../Pages/ArtisanDetail";
-import Error404 from "../Pages/Error404";
-import Home from "../Pages/Home";
-import Accessibilité from "../Pages/PagesVide/Accessibilité";
-import Contact from "../Pages/PagesVide/Contact";
-import DonnéesPerso from "../Pages/PagesVide/DonnéesPerso";
-import Marchés from "../Pages/PagesVide/Marchés";
-import MentionLegale from "../Pages/PagesVide/MentionLegale";
-import Presse from "../Pages/PagesVide/Presse";
-import Région from "../Pages/PagesVide/Région";
-import Footer from "./Footer";
+import ArtisanCategory from "../pages/ArtisanCategory";
+import ArtisanDetail from "../pages/ArtisanDetail";
+import Error404 from "../pages/Error404";
+import Home from "../pages/Home";
+import Accessibilité from "../pages/PagesVide/Accessibilité";
+import Contact from "../pages/PagesVide/Contact";
+import DonnéesPerso from "../pages/PagesVide/DonnéesPerso";
+import Marchés from "../pages/PagesVide/Marchés";
+import MentionLegale from "../pages/PagesVide/MentionLegale";
+import Presse from "../pages/PagesVide/Presse";
+import Région from "../pages/PagesVide/Région";
+import Footer from "./Footer/Footer";
+import Nav from "./Header/Nav";
+
+const Layout = () => {
+  return (
+    <>
+      <Nav></Nav>
+      <>
+        <Outlet></Outlet>
+      </>
+      <Footer></Footer>
+    </>
+  );
+};
 
 function Router() {
-  const Layout = () => {
-    return (
-      <>
-        <>
-          <Outlet></Outlet>
-        </>
-        <Footer></Footer>
-      </>
-    );
-  };
-
   return (
     <>
       <BrowserRouter>

@@ -1,13 +1,12 @@
 import React, { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Rating } from "react-simple-star-rating";
-import About from "../Components/About";
-import ButtonGrp from "../Components/ButtonGrp";
-import Contact from "../Components/Contact";
-import NavBar from "../Components/Nav";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import About from "../components/About";
+import ButtonGrp from "../components/ButtonGrp";
+import Contact from "../components/Contact";
+import { ArtisanContext } from "../context/ArtisanContext";
 
-import "../Css/style.css";
+import "../css/style.css";
 
 const RenderComponent = ({ index }) => {
   switch (index) {
@@ -22,7 +21,6 @@ const RenderComponent = ({ index }) => {
 };
 
 function ArtisanDetail() {
-  const [filterText, setFilterText] = useState("");
   const { datas } = useContext(ArtisanContext);
   const { id } = useParams();
   const artisan = datas.find((artisan) => artisan.id === Number(id));
@@ -31,10 +29,7 @@ function ArtisanDetail() {
 
   return (
     <>
-      <NavBar
-        filterText={filterText}
-        onFilterTextChange={setFilterText}
-      ></NavBar>
+
 
       <main>
         <div className="container shadow p-3 bg-body ">

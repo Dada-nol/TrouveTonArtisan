@@ -12,20 +12,38 @@ nav .nav-link:hover {
   text-decoration: underline;
   color: #00497c;
 }
-nav form {
+nav form .form-control {
   border-bottom: solid 1px #0074c7;
   border-right: solid 1px #0074c7;
-  padding-right: 3px;
 }
-nav form:active {
-  border: solid 2px #82b864;
-}
-nav input {
-  color: #384050;
+nav form input {
   outline: none;
+  color: #384050;
 }
-nav .form-control {
-  border: none;
+nav form ul {
+  background-color: white;
+  z-index: 10;
+  position: relative;
+  border: solid 1px #0074c7;
+  border-top: none;
+  max-width: auto;
+  height: auto;
+  word-wrap: break-word;
+  text-align: start;
+  cursor: pointer;
+}
+nav form li {
+  padding: 10px 0 10px 0;
+  border-bottom: solid 1px #0074c7;
+  list-style: none;
+}
+nav form li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+nav form li:last-child {
+  border-bottom: none;
 }
 nav .navbar-toggler {
   box-shadow: 1px 1px 1px 1px #0074c7;
@@ -47,4 +65,4 @@ nav .navbar-toggler {
   }
 }
 
-/*# sourceMappingURL=nav.css.map */
+/*# sourceMappingURL=Nav.css.map */

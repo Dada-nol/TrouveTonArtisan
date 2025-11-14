@@ -1,18 +1,13 @@
-import React, { useContext, useState } from "react";
-import Card from "../Components/Card";
-import NavBar from "../Components/Nav";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import React, { useContext /* , useState */ } from "react";
+import Card from "../components/Card";
+import { ArtisanContext } from "../context/ArtisanContext";
 
 const Home = () => {
   const { datas } = useContext(ArtisanContext);
-  const [filterText, setFilterText] = useState("");
-  
+
   return (
     <>
-      <NavBar
-        filterText={filterText}
-        onFilterTextChange={setFilterText}
-      ></NavBar>
+
 
       <main>
         <section className="container shadow p-3 bg-body ">

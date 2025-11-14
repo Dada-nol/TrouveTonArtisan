@@ -1,7 +1,7 @@
 import React from "react";
-import Router from "./Components/Router";
-import ArtisanContextProvider from "./Context/ArtisanContext";
-import "./Css/style.css";
+import Router from "./components/Router";
+import ArtisanContextProvider from "./context/ArtisanContext";
+import "./css/style.css";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
-import { ArtisanContext } from "../Context/ArtisanContext";
+import { ArtisanContext } from "../context/ArtisanContext";
 
 function About() {
   const { datas } = useContext(ArtisanContext);
