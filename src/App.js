@@ -1,5 +1,4 @@
-import React from "react";
-import Router from "./components/Router";
+import Router from "./components/Router.jsx";
 import ArtisanContextProvider from "./context/ArtisanContext";
 import "./css/style.css";
 
